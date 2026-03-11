@@ -1,17 +1,22 @@
-import React from "react";
-import Home from "./Home.jsx";
-import Page from "./Page.jsx";
-import Cards from "./Cards.jsx";
-import About from "./About.jsx";      
+
+import react from 'react';
+import{ BrowserRouter,  Router, Routes, Route } from 'react-router-dom';
+import Navbar from './Navbar';
+import Home from './Home';
+import About from './About';
+
 
 function App() {
-  return (
+  return(
     <div>
-      <Home />
-      <Page />
-      <Cards />
-      <About />
+      <Navbar />  
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      
     </div>
+
   );
 }
 
