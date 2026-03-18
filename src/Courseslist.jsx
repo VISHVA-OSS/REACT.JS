@@ -60,7 +60,7 @@ function Courselist(){
 
     // Sorting
 
-    // course.sort((x,y) => y.price-x.price)
+     course.sort((x,y) => y.price-x.price)
 
     // Filtering
 
