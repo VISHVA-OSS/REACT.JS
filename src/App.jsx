@@ -1,23 +1,11 @@
+import React from "react";
+import Course from "./Course";
+import Courselist from "./Courseslist";
 
-import react from 'react';
-import{ BrowserRouter,  Router, Routes, Route } from 'react-router-dom';
-import Navbar from './Navbar';
-import Home from './Home';
-import About from './About';
-
-
-function App() {
+function App(){
   return(
-    <div>
-      <Navbar />  
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-      
-    </div>
-
-  );
+    <Courselist/>
+  )
 }
 
 export default App;
