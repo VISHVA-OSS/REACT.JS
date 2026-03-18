@@ -60,7 +60,7 @@ function Courselist(){
 
     // Sorting
 
-     course.sort((x,y) => y.price-x.price)
+    // course.sort((x,y) => y.price-x.price)
 
     // Filtering
 
@@ -68,7 +68,7 @@ function Courselist(){
     
     // Maping
 
-    const courselist = course.map((course)=> <Course image={course.image} name={course.name} price={course.price} rating={course.rating}/>)
+    const courselist = course.map((course, index)=> <Course key={index} image={course.image} name={course.name} price={course.price} rating={course.rating}/>)
     return(
         <>
         {courselist}

@@ -18,7 +18,7 @@ function Course(props) {
         <h3>{props.name}</h3>
         <p>{props.price}</p>
 
-        <button onClick={Buycourse}>Buy now</button>
+        <button className='buy-btn' onClick={Buycourse}>Buy now</button>
 
       </div>
     )
